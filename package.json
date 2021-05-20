@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "i": "lerna bootstrap",
+    "build": "lerna run --scope @avo/* build",
+    "start": "lerna run --scope @avo/* --parallel start"
+  },
+  "workspaces": {
+    "packages": [
+      "core",
+      "auth",
+      "lib/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "lerna": "^4.0.0",
+    "typescript": "^4.2.4",
+    "webpack": "5.26.2",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

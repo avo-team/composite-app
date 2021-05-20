@@ -1,0 +1,14 @@
+**/dist/**
+**/node_modules/**
+**/__snapshots__/**
+
+*.css
+*.svg
+*.jpg
+*.png
+*.ttf
+
+src/api/api-types.ts
+src/api/ec-procurement-types.ts
+src/api/types.ts
+

@@ -1,0 +1,3 @@
+{
+  "./AuthApp": "./exposes/AuthApp.ts"
+}

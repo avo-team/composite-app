@@ -1,0 +1,24 @@
+@mixin font($variant, $type, $weight, $style) {
+    $font-full-path: "./fonts/#{$variant}";
+    @font-face {
+      font-weight: $weight;
+      font-family: "#{$variant}";
+      font-style: $style;
+      src: local("#{$variant} #{$type}"), local("#{$variant}-#{$type}"),
+        url("#{$font-full-path}-#{$type}.ttf") format("truetype");
+      font-display: swap;
+    }
+  }
+  
+  $font: 'VTBGroupUI';
+  $fontWeight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 600,
+);
+
+@include font($font, 'Regular', map-get($fontWeight, regular), normal);
+
+@include font($font, 'Medium', map-get($fontWeight, medium), normal);
+
+@include font($font, 'SemiBold', map-get($fontWeight, bold), normal);

@@ -1,0 +1,10 @@
+{
+  "extends": "../lib/configs/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "auth/*": ["../auth/exposes/*"]
+    }
+  }
+}
