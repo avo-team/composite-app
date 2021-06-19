@@ -14,6 +14,7 @@ module.exports = webpackConfig({
     shared: {
       react: { singleton: true },
       'react-dom': { singleton: true },
+      antd: { singleton: true },
     },
   }),
 });

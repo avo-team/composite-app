@@ -11,6 +11,10 @@ module.exports = webpackConfig({
     library: { type: 'var', name: 'auth' },
     filename: 'remoteEntry.js',
     exposes: require('./exposes.json'),
-    shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+    shared: {
+      react: { singleton: true },
+      'react-dom': { singleton: true },
+      antd: { singleton: true },
+    },
   }),
 });

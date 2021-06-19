@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { Button, DatePicker } from 'antd';
+
 import assets from './img.png';
 import styles from './styles.scss';
 
@@ -30,6 +32,8 @@ export const App = () => {
   return (
     <div className={styles.root}>
       <h2>Auth</h2>
+      <DatePicker />
+      <Button>Hello world</Button>
       <img src={assets} alt="" />
     </div>
   );

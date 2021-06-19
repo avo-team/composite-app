@@ -16,12 +16,12 @@ $ git clone git@github.com:avo-team/composite-app.git
 ```sh
 $ yarn i
 ```
-
+<!-- 
 Скопируйте файл `.env.example` в корне приложения и переименуйте его в `.env`:
 
 ```sh
 $ cp .env.example .env
-```
+``` -->
 
 Затем можно запускать проект командой:
 
